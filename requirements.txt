@@ -1,2 +1,2 @@
-torch
-fastapi
+torch>=2.0.0
+fastapi>=0.100.0

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Soma Space2D Visualizer</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div id='app-container'>
+        <canvas id='simulation-canvas'></canvas>
+        <div id='control-panel'>
+            <div id='connection-status'>
+                <span id='status-indicator' class='disconnected'></span>
+                <span id='status-text'>Disconnected</span>
+            </div>
+            <div id='controls'>
+                <button id='btn-start' class='control-btn'>Start</button>
+                <button id='btn-stop' class='control-btn'>Stop</button>
+                <button id='btn-reset' class='control-btn'>Reset</button>
+            </div>
+            <div id='info-panel'>
+                <div class='info-row'>
+                    <span class='info-label'>Step:</span>
+                    <span id='step-count' class='info-value'>0</span>
+                </div>
+                <div class='info-row'>
+                    <span class='info-label'>Agents:</span>
+                    <span id='agent-count' class='info-value'>0</span>
+                </div>
+                <div class='info-row'>
+                    <span class='info-label'>Obstacles:</span>
+                    <span id='obstacle-count' class='info-value'>0</span>
+                </div>
+            </div>
+            <div id='legend'>
+                <div class='legend-item'>
+                    <span class='legend-color agent'></span>
+                    <span class='legend-label'>Agent</span>
+                </div>
+                <div class='legend-item'>
+                    <span class='legend-color obstacle'></span>
+                    <span class='legend-label'>Obstacle</span>
+                </div>
+                <div class='legend-item'>
+                    <span class='legend-color velocity'></span>
+                    <span class='legend-label'>Velocity</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='visualizer.js'></script>
+</body>
+</html>
